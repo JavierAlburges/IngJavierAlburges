@@ -30,24 +30,35 @@ const TAGS = {
   }
 }
 const PROJECTS = [
-  {
-    title: "Creacion de Empresa GearSoftCA",
+{
+    title: "Creacion de la pagina web GearSoftCA",
     description:
-      "Esta es una empresa de servicio digitales profesionales de diferentes áreas relacionada con las tecnologías de la información",
-    link: "https://www.linkedin.com/company/gearsoftca",
-    image: "/projects/gearsoftca.webp",
-    tags: [TAGS.KOTLIN, TAGS.TAILWIND],
+      "Descubre el poder de la tecnología al servicio de tu negocio. Nuestra página web, desarrollada con Next.js, React y Tailwind CSS, te ofrece una experiencia de usuario intuitiva y personalizada. Con Firebase como backend y Google Authentication para un acceso seguro, podrás explorar nuestras soluciones tecnológicas de manera rápida y sencilla.",
+    link: "https://gearsoftca.vercel.app",
+    image: "/projects/gearsoftpage.webp",
+    github: "https://github.com/JavierAlburges/gearsoftca",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
   {
     title: "STPC V-Belt Power Transmission",
     description:
-      "DESARROLLO DE UNA APLICACIÓN PARA LA SELECCIÓN DE SISTEMAS DE TRANSMISIÓN DE POTENCIA POR CORREAS EN V PARA DISPOSITIVOS MÓVILES ANDROID",
+      "Desarrollo de una aplicación para la selección de sistemas de transmisión de potencia por correas en V para dispositivos móviles Android",
     link: "https://docs.google.com/presentation/d/1eJFEgrQ5ZKwgp78H3FDxy8Up1ed64P6B/edit?usp=drive_link",
     image: "/projects/tesisapp.webp",
     github: "https://github.com/JavierAlburges",
     tags: [TAGS.KOTLIN, TAGS.SQLITE],
     
   },
+  {
+    title: "Creacion de Empresa GearSoftCA",
+    description:
+      "GearSoftCA es una empresa innovadora especializada en el desarrollo de software a medida. Creamos soluciones tecnológicas que impulsan el crecimiento de nuestros clientes. Nuestros servicios incluyen desarrollo web, aplicaciones móviles, y sistemas de gestión empresarial.",
+    link: "https://www.linkedin.com/company/gearsoftca",
+    image: "/projects/gearsoftca.webp",
+    github: "https://github.com/JavierAlburges/gearsoftca",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  
 ]
 ---
 
@@ -57,7 +68,7 @@ const PROJECTS = [
     <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
   <div class="w-full md:w-1/2">
     <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Recién llegado vs 5 años en Nueva Zelanda" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+      <img alt="Imagen del Proyecto" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
     </div>
   </div>
 
