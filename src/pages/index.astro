@@ -1,27 +1,26 @@
 ---
-import Layout from "@/layouts/Layout.astro"
+import Layout from "@/layouts/Layout.astro";
 
-import AboutMe from "@/components/AboutMe.astro"
-import Briefcase from "@/components/icons/Briefcase.astro"
-import CodeIcon from "@/components/icons/Code.astro"
-import Experience from "@/components/Experience.astro"
-import ProfileCheck from "@/components/icons/ProfileCheck.astro"
-import Projects from "@/components/Projects.astro"
-import SectionContainer from "@/components/SectionContainer.astro"
-import Hero from "@/components/Hero.astro"
+import AboutMe from "@/components/AboutMe.astro";
+import Briefcase from "@/components/icons/Briefcase.astro";
+import CodeIcon from "@/components/icons/Code.astro";
+import Experience from "@/components/Experience.astro";
+import ProfileCheck from "@/components/icons/ProfileCheck.astro";
+import Projects from "@/components/Projects.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import Hero from "@/components/Hero.astro";
 ---
 
 <Layout
-  title="Porfolio de Javier Alburges - Ingeniero mecánico y desarrollador de software con 5 años de experiencia"
-  description="Ingeniero mecánico especializado en mantenimiento predictivo y preventivo para aeronaves. Además, tengo experiencia significativa en el desarrollo web y en la creación de aplicaciones móviles nativas para Android. Utilizo tecnologías como HTML, CSS, JavaScript, React, Node.js, Kotlin, Jetpack Compose, Room, Firebase, SQLite y Retrofit."
+  title="Javier Alburges | Ingeniero Mecánico, CEO de GearSoftCA y Desarrollador de Software en Maracaibo, Venezuela"
+  description="Fundador y CEO de GearSoftCA. Ingeniero mecánico y gerente de proyectos con más de 5 años de experiencia en desarrollo de software, transformación digital y calidad industrial. Especialista en soluciones para empresas (pymes y grandes), desarrollo de apps móviles (React Native, Expo, Firebase, Kotlin), plataformas web (Next.js, Tailwind CSS, SQL), integración de IA y automatización. Certificado ISO 9001:2015. Ubicado en Maracaibo, Zulia, Venezuela. Contacto: +58 412 7521730 | javieralburges@gmail.com."
 >
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
-      <Hero>
-      </slot>
-    </Hero>
+      <Hero />
     </SectionContainer>
-    <div class="space-y-24">
+  </main>
+  <div class="space-y-24">
     <SectionContainer id="experiencia">
       <h2
         class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
@@ -52,5 +51,4 @@ import Hero from "@/components/Hero.astro"
       <AboutMe />
     </SectionContainer>
   </div>
-  </main>
 </Layout>
