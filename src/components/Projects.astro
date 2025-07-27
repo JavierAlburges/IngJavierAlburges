@@ -1,13 +1,33 @@
 ---
-import GitHub from "./icons/GitHub.astro"
-import NextJS from "./icons/NextJS.astro"
-import Tailwind from "./icons/Tailwind.astro"
-import Link from "./icons/Link.astro"
-import LinkButton from "./LinkButton.astro"
-import Kotlin from "./icons/Kotlin.astro"
-import SQLite from "./icons/SQLite.astro"
+import GitHub from "./icons/GitHub.astro";
+import NextJS from "./icons/NextJS.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Link from "./icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+import Kotlin from "./icons/Kotlin.astro";
+import SQLite from "./icons/SQLite.astro";
 
 const TAGS = {
+  REACTNATIVE: {
+    name: "React Native",
+    class: "bg-[#61dafb] text-black",
+    icon: GitHub, // Puedes reemplazar por un icono específico si tienes uno
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-yellow-500 text-black",
+    icon: GitHub, // Puedes reemplazar por un icono específico si tienes uno
+  },
+  EXPO: {
+    name: "Expo",
+    class: "bg-black text-white",
+    icon: GitHub, // Puedes reemplazar por un icono específico si tienes uno
+  },
+  GOOGLEMAPS: {
+    name: "Google Maps",
+    class: "bg-green-600 text-white",
+    icon: GitHub, // Puedes reemplazar por un icono específico si tienes uno
+  },
   NEXT: {
     name: "Next.js",
     class: "bg-black text-white",
@@ -27,91 +47,101 @@ const TAGS = {
     name: "SQLite",
     class: "bg-[#003159] text-white",
     icon: SQLite,
-  }
-}
+  },
+};
 const PROJECTS = [
-{
-    title: "Creacion de la pagina web GearSoftCA",
+  {
+    title: "ServicioExpress",
     description:
-      "Descubre el poder de la tecnología al servicio de tu negocio. Nuestra página web, desarrollada con Next.js, React y Tailwind CSS, te ofrece una experiencia de usuario intuitiva y personalizada. Con Firebase como backend y Google Authentication para un acceso seguro, podrás explorar nuestras soluciones tecnológicas de manera rápida y sencilla.",
+      "¿Cansado de buscar profesionales confiables para el mantenimiento y las reparaciones de tu empresa? ServicioExpress es la solución integral que conecta tu negocio con una amplia red de expertos calificados en plomería, electricidad, servicios domésticos, refrigeración y construcción. Olvídate de procesos de contratación tediosos y encuentra al profesional ideal de forma rápida y sencilla. Con ServicioExpress Empresas, optimiza la gestión de tus servicios generales, ahorra tiempo y asegura la calidad que tu empresa merece. ¡Descarga ahora y experimenta la eficiencia al alcance de tu mano!",
+    link: "https://play.google.com/store/apps/details?id=com.gearsoftca.servicioexpress",
+    image: "/projects/servicioexpress.webp",
+    github: "https://github.com/JavierAlburges/servicioexpress", // Actualiza con el repo real si lo tienes
+    tags: [TAGS.REACTNATIVE, TAGS.FIREBASE, TAGS.EXPO, TAGS.GOOGLEMAPS],
+  },
+  {
+    title: "Creación de la página web GearSoftCA",
+    description:
+      "Sitio web corporativo desarrollado con Next.js, React y Tailwind CSS, diseñado para ofrecer una experiencia de usuario moderna, intuitiva y segura. Integra autenticación con Google, base de datos en Firebase y SQL, permitiendo la gestión eficiente de información y la exploración de soluciones tecnológicas personalizadas para empresas. La plataforma está optimizada para velocidad, escalabilidad y facilidad de uso, facilitando el contacto y la interacción con clientes potenciales.",
     link: "https://gearsoftca.vercel.app",
-    image: "/projects/gearsoftpage.webp",
+    image: "/projects/gearsoftcaweb.webp",
     github: "https://github.com/JavierAlburges/gearsoftca",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.FIREBASE, TAGS.SQLITE],
   },
   {
-    title: "STPC V-Belt Power Transmission",
+    title: "STPCV: Correas y Poleas",
     description:
-      "Desarrollo de una aplicación para la selección de sistemas de transmisión de potencia por correas en V para dispositivos móviles Android",
-    link: "https://docs.google.com/presentation/d/1eJFEgrQ5ZKwgp78H3FDxy8Up1ed64P6B/edit?usp=drive_link",
-    image: "/projects/tesisapp.webp",
+      "¡Presentamos STPCV, la innovadora aplicación móvil de GearSoftCA diseñada para la selección eficiente de sistemas de transmisión de potencia por correas en V directamente en tu dispositivo Android!\n\nBasada en los parámetros de potencia del equipo conductor, las RPM y la información detallada del catálogo de INTERMEC, STPCV simplifica el proceso de selección como nunca antes. Olvídate de las complejas tablas y fórmulas en papel. Nuestra app transforma esos datos en una base de datos intuitiva y algoritmos precisos para darte la solución que necesitas al instante.",
+    link: "https://play.google.com/store/apps/details?id=com.gearsoftca.stpcv",
+    image: "/projects/stpcv.webp",
     github: "https://github.com/JavierAlburges",
-    tags: [TAGS.KOTLIN, TAGS.SQLITE],
-    
+    tags: [TAGS.KOTLIN],
   },
   {
-    title: "Creacion de Empresa GearSoftCA",
+    title: "Creación de Empresa GearSoftCA",
     description:
-      "GearSoftCA es una empresa innovadora especializada en el desarrollo de software a medida. Creamos soluciones tecnológicas que impulsan el crecimiento de nuestros clientes. Nuestros servicios incluyen desarrollo web, aplicaciones móviles, y sistemas de gestión empresarial.",
+      "GearSoftCA destaca como proyecto por su enfoque en el desarrollo de soluciones tecnológicas a medida para empresas de Venezuela y Latinoamérica. Hemos implementado plataformas web y móviles modernas, integrando tecnologías como Next.js, React, Tailwind CSS y bases de datos en Firebase y SQL. Nuestro diferencial es la personalización, la calidad y la innovación, permitiendo a nuestros clientes digitalizar procesos, optimizar la gestión empresarial y potenciar su crecimiento. GearSoftCA es sinónimo de confianza, soporte y transformación digital real para negocios que buscan destacar en el mercado actual.",
     link: "https://www.linkedin.com/company/gearsoftca",
-    image: "/projects/gearsoftca.webp",
+    image: "/projects/gearsoftcalinkedin.webp",
     github: "https://github.com/JavierAlburges/gearsoftca",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
-  
-]
+];
 ---
 
 <div class="flex flex-col gap-y-16">
   {
     PROJECTS.map(({ image, title, description, tags, link, github }) => (
-    <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
-  <div class="w-full md:w-1/2">
-    <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-      <img alt="Imagen del Proyecto" class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
-    </div>
-  </div>
+      <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
+        <div class="w-full md:w-1/2">
+          <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+            <img
+              alt="Imagen del Proyecto"
+              class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
+              loading="lazy"
+              src={image}
+            />
+          </div>
+        </div>
 
-  <div class="w-full md:w-1/2 md:max-w-lg">
-    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
-      {title}
-    </h3>
-    <div class="flex flex-wrap mt-2">
-      <ul class="flex flex-row mb-2 gap-x-2">
-          {tags.map((tag) => (
-            <li>
-              <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
-              >
-                <tag.icon class="size-4" />
-                {tag.name}
-              </span>
-            </li>
-          ))}
-        </ul>
+        <div class="w-full md:w-1/2 md:max-w-lg">
+          <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100">
+            {title}
+          </h3>
+          <div class="flex flex-wrap mt-2">
+            <ul class="flex flex-row mb-2 gap-x-2">
+              {tags.map((tag) => (
+                <li>
+                  <span
+                    class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 `}
+                  >
+                    <tag.icon class="size-4" />
+                    {tag.name}
+                  </span>
+                </li>
+              ))}
+            </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
-      <footer class="flex items-end justify-start mt-4 gap-x-4">
-          {github && (
-            <LinkButton href={github}>
-              <GitHub class="size-6" />
-              Code
-              
-            </LinkButton>
-          )}
-          {link && (
-            <LinkButton href={link}>
-              <Link class="size-4" />
-              Preview
-            </LinkButton>
-          )}
-        </footer>
-    </div>
-  </div>
-</article>
+            <div class="mt-2 text-gray-700 dark:text-gray-400">
+              {description}
+            </div>
+            <footer class="flex items-end justify-start mt-4 gap-x-4">
+              {github && (
+                <LinkButton href={github}>
+                  <GitHub class="size-6" />
+                  Code
+                </LinkButton>
+              )}
+              {link && (
+                <LinkButton href={link}>
+                  <Link class="size-4" />
+                  Preview
+                </LinkButton>
+              )}
+            </footer>
+          </div>
+        </div>
+      </article>
     ))
   }
 </div>
-
-
-

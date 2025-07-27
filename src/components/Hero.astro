@@ -1,16 +1,16 @@
 ---
-const personalImageAlt = "Javier Alburges"
-import Badge from "@/components/Badge.astro"
-import LinkedInIcon from "@/components/icons/LinkedIn.astro"
-import MailIcon from "@/components/icons/Mail.astro"
-import SocialPill from "@/components/SocialPill.astro"
+const personalImageAlt = "Javier Alburges";
+import Badge from "@/components/Badge.astro";
+import LinkedInIcon from "@/components/icons/LinkedIn.astro";
+import MailIcon from "@/components/icons/Mail.astro";
+import SocialPill from "@/components/SocialPill.astro";
 ---
 
 <div class="max-w-xl">
   <div class="flex gap-4 mb-4">
     <img
       class="rounded-full shadow-lg size-16"
-      src="/javier.webp"
+      src="/javier.png"
       alt={personalImageAlt}
     />
     <a
@@ -25,14 +25,24 @@ import SocialPill from "@/components/SocialPill.astro"
   <h1
     class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
   >
-    Hey, soy Javier Alburges
+    Ing. Javier Alburges
   </h1>
+  <h2 class="text-base font-semibold text-yellow-600 dark:text-yellow-200 mt-2">
+    Fundador & CEO en GearSoftCA | Ingeniero | Especialista en Calidad &
+    Gerencia de Proyectos | Software Innovador
+  </h2>
   <p
     class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
   >
-    +5 años de experiencia. <strong
-      >Ingeniero mecánico y desarrollador de software</strong
-    > de Maracaibo, Venezuela ve. Especializado en mantenimiento predictivo y preventivo para aeronaves. <strong>Auditorias Interna ISO 9001:2015</strong> Además, tengo experiencia significativa en el desarrollo web y en la creación de aplicaciones móviles nativas para Android.
+    Más de 5 años de experiencia como <strong
+      >ingeniero mecánico y desarrollador de software</strong
+    > en Maracaibo, Venezuela. Especialista en mantenimiento predictivo y preventivo
+    para aeronaves, con certificación en <strong
+      >Auditoría Interna ISO 9001:2015</strong
+    > y sólida trayectoria en calidad y gestión de proyectos. Fundador y CEO de GearSoftCA,
+    liderando el desarrollo de soluciones digitales innovadoras, aplicaciones móviles
+    y web, combinando liderazgo, visión estratégica y pasión por la tecnología para
+    transformar ideas en productos de alto impacto.
   </p>
   <nav class="flex flex-wrap gap-4 mt-8">
     <SocialPill href="mailto:javieralburges@gmail.com">
