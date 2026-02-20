@@ -1,0 +1,28 @@
+# Javier Alburges - Portfolio
+
+> Fundador y CEO de GearSoftCA. Ingeniero mecánico y gerente de proyectos con más de 5 años de experiencia en desarrollo de software, transformación digital y calidad industrial. Especialista en soluciones para empresas (pymes y grandes), desarrollo de apps móviles (React Native, Expo, Firebase, Kotlin), plataformas web (Next.js, Tailwind CSS, SQL), integración de IA y automatización. Certificado ISO 9001:2015.
+
+## Sobre Mí
+
+Soy un profesional versátil con formación en Ingeniería Mecánica y Maestría en Gerencia de Proyectos Industriales. Lidero GearSoftCA, creando soluciones de software innovadoras. Mi experiencia abarca desde la planificación de mantenimiento aeronáutico hasta el aseguramiento de calidad y la docencia en programación.
+
+## Experiencia
+
+- **Fundador y CEO - GearSoftCA** (Sept 2020 - Actualidad): Liderazgo estratégico y desarrollo de software multiplataforma.
+- **Profesor de Programación - Centro Educativo Logros** (Oct 2023 - Dic 2024): Cursos de desarrollo web front-end.
+- **Asistente de Dirección - Ironflex** (Nov 2022 - Mar 2023): Soporte administrativo y certificación ISO 9001.
+- **Gestor de Publicaciones - Venezolana (RAV)** (Nov 2019 - Jul 2022): Documentación técnica aeronáutica.
+
+## Proyectos Destacados
+
+- [ServicioExpress](https://play.google.com/store/apps/details?id=com.gearsoftca.servicioexpress): App móvil para conectar empresas con proveedores de servicios de mantenimiento (React Native, Expo, Firebase).
+- [GearSoftCA Web](https://gearsoftca.vercel.app): Sitio corporativo moderno y escalable (Next.js, React, Tailwind CSS).
+- [STPCV: Correas y Poleas](https://play.google.com/store/apps/details?id=com.gearsoftca.stpcv): Aplicación de ingeniería para cálculo de transmisiones (Kotlin, Jetpack Compose).
+
+## Enlaces y Contacto
+
+- [LinkedIn](https://www.linkedin.com/in/javieralburges/)
+- [GitHub](https://github.com/JavierAlburges/)
+- [Portafolio Web](https://gearsoftca.vercel.app)
+- [Email](mailto:javieralburges@gmail.com)
+- **Ubicación**: Maracaibo, Zulia, Venezuela
