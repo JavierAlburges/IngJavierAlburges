@@ -3,7 +3,7 @@ import "@fontsource-variable/onest"
 
 import Header from "../components/Header.astro"
 import Footer from "../components/Footer.astro"
-import { ViewTransitions } from "astro:transitions"
+import { ClientRouter } from "astro:transitions"
 
 interface Props {
   title: string
@@ -11,27 +11,71 @@ interface Props {
 }
 
 const { description, title } = Astro.props
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 ---
 
 <!doctype html>
-<html lang="es">
+<html lang="es" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta property="og:image" content="/portafolio.webp" />
+    <link rel="canonical" href={canonicalURL} />
     <meta name="generator" content={Astro.generator} />
     <meta name="google-site-verification" content="sIyRrMDGwLjnrlANbzwYf1tXWVcVNSjL_yf76grlDBo" />
+
+    <!-- SEO: Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL("/projects/gearsoftca-portada.png", Astro.site)} />
     <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="Javier Alburges - GearSoftCA" />
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL("/projects/gearsoftca-portada.png", Astro.site)} />
+
+    <!-- SEO: Additional -->
+    <meta name="author" content="Javier Alburges" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="keywords" content="Javier Alburges, GearSoftCA, ingeniero mecánico, desarrollador de software, CEO, Maracaibo, Venezuela, React Native, Next.js, Kotlin, Firebase, inteligencia artificial, desarrollo web, desarrollo móvil, apps, Odoo ERP, Scrum Master, ISO 9001, transformación digital, soluciones tecnológicas" />
+    <link rel="me" href="https://www.linkedin.com/in/javieralburges/" />
+    <link rel="me" href="https://github.com/JavierAlburges/" />
+
+    <!-- GEO Tags -->
+    <meta name="geo.region" content="VE-V" />
+    <meta name="geo.placename" content="Maracaibo, Zulia" />
+    <meta name="geo.position" content="10.6427;-71.6125" />
+    <meta name="ICBM" content="10.6427, -71.6125" />
+
     <title>{title}</title>
-    <ViewTransitions />
+    <ClientRouter />
+
+    <!-- Dark Mode por defecto: previene flash of light theme -->
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
+          return localStorage.getItem("theme")
+        }
+        return "dark"
+      })()
+      if (theme === "light") {
+        document.documentElement.classList.remove("dark")
+      } else {
+        document.documentElement.classList.add("dark")
+      }
+    </script>
   </head>
 
   <body class="relative text-black dark:text-white">
     <div
-      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full bg-gray-50 dark:bg-gray-950
+      class="absolute top-0 bottom-0 z-[-2] min-h-screen w-full
+      bg-gray-50 dark:bg-gray-950
       bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(217,216,255,0.5),rgba(255,255,255,0.9))]
       dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"
     >
@@ -57,15 +101,13 @@ const { description, title } = Astro.props
         overscroll-behavior: none;
       }
 
+      .dark body {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
       @media (prefers-reduced-motion: reduce) {
         html {
           scroll-behavior: auto;
-        }
-      }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          color: rgba(255, 255, 255, 0.9);
         }
       }
 
@@ -88,6 +130,9 @@ const { description, title } = Astro.props
           border-radius: 9999px;
         }
       }
+
+
+
 
       @media (prefers-color-scheme: dark) {
         @keyframes blur {

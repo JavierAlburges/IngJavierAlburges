@@ -1,28 +1,61 @@
-# Javier Alburges - Portfolio
+# Javier Alburges - Portafolio Profesional
 
-> Fundador y CEO de GearSoftCA. Ingeniero mecánico y gerente de proyectos con más de 5 años de experiencia en desarrollo de software, transformación digital y calidad industrial. Especialista en soluciones para empresas (pymes y grandes), desarrollo de apps móviles (React Native, Expo, Firebase, Kotlin), plataformas web (Next.js, Tailwind CSS, SQL), integración de IA y automatización. Certificado ISO 9001:2015.
+> Javier Alburges es el Fundador y CEO de GearSoftCA, una empresa líder en desarrollo de software en Maracaibo, Zulia, Venezuela. Es ingeniero mecánico, desarrollador de software, Scrum Master y especialista en Inteligencia Artificial, con más de 5 años de experiencia en transformación digital para empresas de Venezuela y Latinoamérica. Certificado como Auditor Interno ISO 9001:2015. Contacto: javieralburges@gmail.com | +58 412 7521730.
 
-## Sobre Mí
+## Quién es Javier Alburges
 
-Soy un profesional versátil con formación en Ingeniería Mecánica y Maestría en Gerencia de Proyectos Industriales. Lidero GearSoftCA, creando soluciones de software innovadoras. Mi experiencia abarca desde la planificación de mantenimiento aeronáutico hasta el aseguramiento de calidad y la docencia en programación.
+Javier Alburges es un profesional venezolano radicado en Maracaibo, Zulia, que combina ingeniería mecánica con desarrollo de software. Es el fundador de GearSoftCA (https://gearsoftca.vercel.app), empresa que provee soluciones tecnológicas a medida incluyendo aplicaciones móviles, plataformas web, Odoo ERP/CRM e inteligencia artificial. Actualmente también se desempeña como Supervisor de Operaciones y Proyectos / Scrum Master en BHT Soluciones.
 
-## Experiencia
+## Qué es GearSoftCA
 
-- **Fundador y CEO - GearSoftCA** (Sept 2020 - Actualidad): Liderazgo estratégico y desarrollo de software multiplataforma.
-- **Profesor de Programación - Centro Educativo Logros** (Oct 2023 - Dic 2024): Cursos de desarrollo web front-end.
-- **Asistente de Dirección - Ironflex** (Nov 2022 - Mar 2023): Soporte administrativo y certificación ISO 9001.
-- **Gestor de Publicaciones - Venezolana (RAV)** (Nov 2019 - Jul 2022): Documentación técnica aeronáutica.
+GearSoftCA es una empresa de desarrollo de software fundada en 2020 por Javier Alburges en Maracaibo, Venezuela. Se especializa en:
+- Desarrollo de software a medida (web y móvil)
+- Aplicaciones móviles (React Native, Kotlin)
+- Plataformas web (Next.js, React, Tailwind CSS)
+- Odoo ERP/CRM (Community y Cloud)
+- Inteligencia Artificial aplicada a empresas
+- Google Cloud y soluciones en la nube
+- Transformación digital y consultoría tecnológica
+
+Sitio web: https://gearsoftca.vercel.app
+LinkedIn empresa: https://www.linkedin.com/company/gearsoftca/
+
+## Experiencia Profesional
+
+- **Supervisor de Operaciones y Proyectos / Scrum Master** en BHT Soluciones (sept 2025 - actualidad): Lidera estrategia operativa, gestión de portafolio de proyectos y equipos multidisciplinarios en E-commerce. Implementa marcos ágiles Scrum/Kanban.
+- **Fundador y CEO** de GearSoftCA (sept 2020 - actualidad): Dirección estratégica, desarrollo de productos, alianzas comerciales y creación de soluciones de software multiplataforma innovadoras.
+- **Profesor de Programación de Software** en Centro Educativo Logros (oct 2023 - dic 2024): Cursos de HTML, CSS, JavaScript, TypeScript y React.
+- **Asistente de Dirección** en Ironflex (nov 2022 - mar 2023): Certificación ISO 9001 y productos industriales.
+- **Gestor de Publicaciones Técnicas** en Venezolana / RAV (nov 2019 - jul 2022): Documentación técnica aeronáutica.
+- **Planificador de Mantenimiento Aeronáutico** (Pasante) en RAV S.A. (sept - oct 2019).
 
 ## Proyectos Destacados
 
-- [ServicioExpress](https://play.google.com/store/apps/details?id=com.gearsoftca.servicioexpress): App móvil para conectar empresas con proveedores de servicios de mantenimiento (React Native, Expo, Firebase).
-- [GearSoftCA Web](https://gearsoftca.vercel.app): Sitio corporativo moderno y escalable (Next.js, React, Tailwind CSS).
-- [STPCV: Correas y Poleas](https://play.google.com/store/apps/details?id=com.gearsoftca.stpcv): Aplicación de ingeniería para cálculo de transmisiones (Kotlin, Jetpack Compose).
+- **ServicioExpress** (https://play.google.com/store/apps/details?id=com.gearsoftca.servicioexpress): App móvil para conectar empresas con proveedores de servicios (React Native, Expo, Firebase, Google Maps).
+- **American Institute – Sitio Web** (https://americaninstitute.vercel.app/): Sitio institucional para academia de Inglés, Arte y Tecnología (Next.js, Tailwind CSS).
+- **Implementación de Odoo (Ventas)** (https://www.odoo.com/es): Implementación del módulo de Ventas de Odoo para pequeños negocios, Community y Cloud.
+- **GearSoftCA Web** (https://gearsoftca.vercel.app): Plataforma corporativa (Next.js, React, Tailwind CSS, Firebase, SQL).
+- **Curso de IA para Empresas (Impartido para WESCA)** (http://www.wesca.com/): Curso de implementación estratégica de IA diseñado e impartido para la empresa WESCA.
+- **STPCV: Correas y Poleas** (https://play.google.com/store/apps/details?id=com.gearsoftca.stpcv): App Android para cálculo de transmisiones de potencia (Kotlin).
+- **Creación de Empresa GearSoftCA**: Marca y ecosistema de soluciones tecnológicas.
 
-## Enlaces y Contacto
+## Tecnologías y Habilidades
 
-- [LinkedIn](https://www.linkedin.com/in/javieralburges/)
-- [GitHub](https://github.com/JavierAlburges/)
-- [Portafolio Web](https://gearsoftca.vercel.app)
-- [Email](mailto:javieralburges@gmail.com)
-- **Ubicación**: Maracaibo, Zulia, Venezuela
+React Native, Expo, Firebase, Google Maps, Next.js, React, Tailwind CSS, Kotlin, Jetpack Compose, Flutter, Dart, NestJS, Supabase, PostgreSQL, SQLite, Python, Inteligencia Artificial (Gemini), Google Workspace, Jira, Scrum, PMI, ISO 9001:2015, Ingeniería Mecánica, Mantenimiento Aeronáutico.
+
+## Formación Académica
+
+- Ingeniería Mecánica — Universidad del Zulia (LUZ)
+- Maestría en Gerencia de Proyectos Industriales (en curso) — URBE University
+- Auditor Interno ISO 9001:2015
+
+## Redes y Contacto
+
+- Portafolio: https://javieralburges.vercel.app
+- LinkedIn: https://www.linkedin.com/in/javieralburges/
+- GitHub: https://github.com/JavierAlburges/
+- GearSoftCA Web: https://gearsoftca.vercel.app
+- LinkedIn Empresa: https://www.linkedin.com/company/gearsoftca/
+- Email: javieralburges@gmail.com
+- WhatsApp: +58 412 7521730
+- Ubicación: Maracaibo, Zulia, Venezuela

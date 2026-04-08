@@ -9,12 +9,132 @@ import ProfileCheck from "@/components/icons/ProfileCheck.astro";
 import Projects from "@/components/Projects.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Hero from "@/components/Hero.astro";
+import Stack from "@/components/Stack.astro";
+import SettingsIcon from "@/components/icons/SettingsIcon.astro";
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://javieralburges.vercel.app/#person",
+      name: "Javier Alburges",
+      alternateName: "Ing. Javier Alburges",
+      jobTitle: "Fundador & CEO en GearSoftCA · Supervisor de Operaciones / Scrum Master",
+      description: "Fundador y CEO de GearSoftCA. Ingeniero mecánico, desarrollador de software y especialista en IA con más de 5 años de experiencia en soluciones tecnológicas para empresas.",
+      url: "https://javieralburges.vercel.app",
+      image: "https://javieralburges.vercel.app/javier.png",
+      email: "javieralburges@gmail.com",
+      telephone: "+584127521730",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Maracaibo",
+        addressRegion: "Zulia",
+        addressCountry: "VE",
+      },
+      sameAs: [
+        "https://www.linkedin.com/in/javieralburges/",
+        "https://github.com/JavierAlburges/",
+        "https://gearsoftca.vercel.app",
+        "https://www.linkedin.com/company/gearsoftca/",
+      ],
+      worksFor: {
+        "@type": "Organization",
+        "@id": "https://javieralburges.vercel.app/#gearsoftca",
+        name: "GearSoftCA",
+        url: "https://gearsoftca.vercel.app",
+        logo: "https://gearsoftca.vercel.app/favicon.svg",
+        description: "Empresa líder en desarrollo de software en Maracaibo, Zulia, Venezuela. Software a medida, desarrollo web y móvil, Google Cloud, Odoo ERP/CRM, automatización con IA.",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Maracaibo",
+          addressRegion: "Zulia",
+          addressCountry: "VE",
+        },
+        sameAs: [
+          "https://www.linkedin.com/company/gearsoftca/",
+          "https://gearsoftca.vercel.app",
+        ],
+      },
+      alumniOf: {
+        "@type": "EducationalOrganization",
+        name: "Universidad del Zulia",
+      },
+      knowsAbout: [
+        "Desarrollo de software",
+        "React Native",
+        "Next.js",
+        "Kotlin",
+        "Firebase",
+        "Inteligencia Artificial",
+        "Odoo ERP",
+        "Scrum",
+        "ISO 9001:2015",
+        "Gerencia de proyectos",
+        "E-commerce",
+        "Transformación digital",
+      ],
+      hasCredential: [
+        {
+          "@type": "EducationalOccupationalCredential",
+          credentialCategory: "certification",
+          name: "Auditor Interno ISO 9001:2015",
+        },
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://javieralburges.vercel.app/#website",
+      url: "https://javieralburges.vercel.app",
+      name: "Javier Alburges - GearSoftCA",
+      description: "Portafolio profesional de Javier Alburges, Fundador & CEO de GearSoftCA",
+      publisher: { "@id": "https://javieralburges.vercel.app/#person" },
+      inLanguage: "es",
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://javieralburges.vercel.app/#webpage",
+      url: "https://javieralburges.vercel.app",
+      name: "Javier Alburges | Ingeniero, CEO de GearSoftCA, Desarrollador de Software y Especialista en IA",
+      isPartOf: { "@id": "https://javieralburges.vercel.app/#website" },
+      about: { "@id": "https://javieralburges.vercel.app/#person" },
+      inLanguage: "es",
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://javieralburges.vercel.app/#gearsoftca",
+      name: "GearSoftCA",
+      alternateName: "GearSoft CA",
+      url: "https://gearsoftca.vercel.app",
+      founder: { "@id": "https://javieralburges.vercel.app/#person" },
+      foundingDate: "2020-09",
+      description: "Empresa de desarrollo de software en Maracaibo, Venezuela. Especialista en desarrollo web, apps móviles, Odoo ERP, inteligencia artificial y soluciones digitales para empresas en Venezuela y Latinoamérica.",
+      areaServed: ["Venezuela", "Latinoamérica", "LATAM"],
+      knowsAbout: [
+        "Desarrollo de software a medida",
+        "Aplicaciones móviles",
+        "Desarrollo web",
+        "Odoo ERP/CRM",
+        "Inteligencia Artificial",
+        "Google Cloud",
+        "E-commerce",
+      ],
+      sameAs: [
+        "https://www.linkedin.com/company/gearsoftca/",
+        "https://gearsoftca.vercel.app",
+      ],
+    },
+  ],
+};
 ---
 
 <Layout
-  title="Javier Alburges | Ingeniero Mecánico, CEO de GearSoftCA y Desarrollador de Software en Maracaibo, Venezuela"
-  description="Fundador y CEO de GearSoftCA. Ingeniero mecánico y gerente de proyectos con más de 5 años de experiencia en desarrollo de software, transformación digital y calidad industrial. Especialista en soluciones para empresas (pymes y grandes), desarrollo de apps móviles (React Native, Expo, Firebase, Kotlin), plataformas web (Next.js, Tailwind CSS, SQL), integración de IA y automatización. Certificado ISO 9001:2015. Ubicado en Maracaibo, Zulia, Venezuela. Contacto: +58 412 7521730 | javieralburges@gmail.com."
+  title="Javier Alburges | Ingeniero, CEO de GearSoftCA, Desarrollador de Software y Especialista en IA en Maracaibo, Venezuela"
+  description="Javier Alburges — Fundador y CEO de GearSoftCA. Ingeniero mecánico, Scrum Master y especialista en IA con +5 años de experiencia en desarrollo de software. Experto en apps móviles (React Native, Kotlin), plataformas web (Next.js), Odoo ERP, inteligencia artificial y transformación digital para empresas en Venezuela y Latinoamérica. Certificado ISO 9001:2015. Maracaibo, Zulia."
 >
+  <!-- JSON-LD Structured Data for SEO/AEO -->
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
   <main class="px-4">
     <SectionContainer class="py-16 md:py-36">
       <Hero />
@@ -39,6 +159,16 @@ import Hero from "@/components/Hero.astro";
         Proyectos
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="tecnologias">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white"
+      >
+        <SettingsIcon class="size-8" />
+        Tecnologías y herramientas
+      </h2>
+      <Stack />
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">

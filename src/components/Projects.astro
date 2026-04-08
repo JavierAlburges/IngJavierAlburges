@@ -10,27 +10,29 @@ import Firebase from "./icons/Firebase.astro";
 import Expo from "./icons/Expo.astro";
 import ReactNative from "./icons/React.astro";
 import GoogleMaps from "./icons/GoogleMaps.astro";
+import Odoo from "./icons/Odoo.astro";
+import AI from "./icons/AI.astro";
 
 const TAGS = {
   REACTNATIVE: {
     name: "React Native",
     class: "bg-[#61dafb] text-black",
-    icon: ReactNative, // Puedes reemplazar por un icono específico si tienes uno
+    icon: ReactNative,
   },
   FIREBASE: {
     name: "Firebase",
     class: "bg-yellow-500 text-black",
-    icon: Firebase, // Puedes reemplazar por un icono específico si tienes uno
+    icon: Firebase,
   },
   EXPO: {
     name: "Expo",
     class: "bg-black text-white",
-    icon: Expo, // Puedes reemplazar por un icono específico si tienes uno
+    icon: Expo,
   },
   GOOGLEMAPS: {
     name: "Google Maps",
     class: "bg-green-600 text-white",
-    icon: GoogleMaps, // Puedes reemplazar por un icono específico si tienes uno
+    icon: GoogleMaps,
   },
   NEXT: {
     name: "Next.js",
@@ -44,7 +46,7 @@ const TAGS = {
   },
   KOTLIN: {
     name: "Kotlin",
-    class: "bg-[#003159] text-white",
+    class: "bg-[#7F52FF] text-white",
     icon: Kotlin,
   },
   SQLITE: {
@@ -52,41 +54,79 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: SQL,
   },
+  ODOO: {
+    name: "Odoo ERP",
+    class: "bg-[#9C5189] text-white",
+    icon: Odoo,
+  },
+  AI: {
+    name: "Inteligencia Artificial",
+    class: "bg-gradient-to-r from-purple-600 to-blue-500 text-white",
+    icon: AI,
+  },
 };
+
 const PROJECTS = [
   {
     title: "ServicioExpress",
     description:
-      "¿Cansado de buscar profesionales confiables para el mantenimiento y las reparaciones de tu empresa? ServicioExpress es la solución integral que conecta tu negocio con una amplia red de expertos calificados en plomería, electricidad, servicios domésticos, refrigeración y construcción. Olvídate de procesos de contratación tediosos y encuentra al profesional ideal de forma rápida y sencilla. Con ServicioExpress Empresas, optimiza la gestión de tus servicios generales, ahorra tiempo y asegura la calidad que tu empresa merece. ¡Descarga ahora y experimenta la eficiencia al alcance de tu mano!",
+      "¿Cansado de buscar profesionales confiables para el mantenimiento y las reparaciones de tu empresa? ServicioExpress es la solución integral que conecta tu negocio con una amplia red de expertos calificados en plomería, electricidad, servicios domésticos, refrigeración y construcción. Olvídate de procesos de contratación tediosos y encuentra al profesional ideal de forma rápida y sencilla. Con ServicioExpress Empresas, optimiza la gestión de tus servicios generales, ahorra tiempo y asegura la calidad que tu empresa merece.",
     link: "https://play.google.com/store/apps/details?id=com.gearsoftca.servicioexpress",
-    image: "/projects/servicioexpress.webp",
-    github: "https://github.com/JavierAlburges/", // Enlace general
+    image: "/projects/ServicioExpress.png",
+    github: "https://github.com/JavierAlburges/",
     tags: [TAGS.REACTNATIVE, TAGS.FIREBASE, TAGS.EXPO, TAGS.GOOGLEMAPS],
+  },
+  {
+    title: "American Institute – Sitio Web",
+    description:
+      "Sitio web institucional moderno desarrollado para American Institute, academia de formación en Inglés, Arte y Tecnología para todas las edades. Construido con Next.js y Tailwind CSS, ofrece una experiencia de usuario fluida, diseño responsivo y optimización SEO. Integra secciones de cursos, inscripción en línea y comunicación directa con los usuarios.",
+    link: "https://americaninstitute.vercel.app/",
+    image: "/projects/american-institute-web.png",
+    github: "https://github.com/JavierAlburges/",
+    tags: [TAGS.NEXT, TAGS.TAILWIND],
+  },
+  {
+    title: "Implementación de Odoo (Ventas)",
+    description:
+      "Implementación completa del módulo de Ventas de Odoo para pequeños negocios, tanto en su versión Community Edition (on-premise) como en la versión Cloud. Esta solución ERP permite gestionar clientes, cotizaciones, pedidos de venta y seguimiento de oportunidades comerciales, optimizando el ciclo de ventas y mejorando la productividad del equipo de ventas de la empresa.",
+    link: "https://www.odoo.com/es",
+    image: "/projects/implementacion-odoo.png",
+    github: "https://github.com/JavierAlburges/",
+    tags: [TAGS.ODOO, TAGS.SQLITE],
   },
   {
     title: "Creación de la página web GearSoftCA",
     description:
       "Sitio web corporativo desarrollado con Next.js, React y Tailwind CSS, diseñado para ofrecer una experiencia de usuario moderna, intuitiva y segura. Integra autenticación con Google, base de datos en Firebase y SQL, permitiendo la gestión eficiente de información y la exploración de soluciones tecnológicas personalizadas para empresas. La plataforma está optimizada para velocidad, escalabilidad y facilidad de uso, facilitando el contacto y la interacción con clientes potenciales.",
     link: "https://gearsoftca.vercel.app",
-    image: "/projects/gearsoftcaweb.webp",
+    image: "/projects/gearsoftcaweb.png",
     github: "https://github.com/JavierAlburges/",
     tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.FIREBASE, TAGS.SQLITE],
   },
   {
+    title: "Curso de IA para Empresas (Impartido para WESCA)",
+    description:
+      "Diseño e impartición de un curso especializado en implementación estratégica de Inteligencia Artificial para procesos empresariales, realizado para la empresa WESCA. El programa capacitó a la organización en el uso de herramientas modernas de IA para optimizar operaciones, automatizar tareas y mejorar la toma de decisiones estratégicas, demostrando el impacto real de la IA en el entorno corporativo.",
+    link: "http://www.wesca.com/",
+    image: "/projects/curso-ia.png",
+    github: "https://github.com/JavierAlburges/",
+    tags: [TAGS.AI],
+  },
+  {
     title: "STPCV: Correas y Poleas",
     description:
-      "¡Presentamos STPCV, la innovadora aplicación móvil de GearSoftCA diseñada para la selección eficiente de sistemas de transmisión de potencia por correas en V directamente en tu dispositivo Android!\n\nBasada en los parámetros de potencia del equipo conductor, las RPM y la información detallada del catálogo de INTERMEC, STPCV simplifica el proceso de selección como nunca antes. Olvídate de las complejas tablas y fórmulas en papel. Nuestra app transforma esos datos en una base de datos intuitiva y algoritmos precisos para darte la solución que necesitas al instante.",
+      "Aplicación móvil Android diseñada por GearSoftCA para la selección eficiente de sistemas de transmisión de potencia por correas en V. Basada en los parámetros de potencia del equipo conductor, las RPM y la información detallada del catálogo de INTERMEC, STPCV simplifica el proceso de selección mediante una base de datos intuitiva y algoritmos precisos para dar la solución al instante, disponible en Google Play Store.",
     link: "https://play.google.com/store/apps/details?id=com.gearsoftca.stpcv",
-    image: "/projects/stpcv.webp",
+    image: "/projects/STPCVApp.png",
     github: "https://github.com/JavierAlburges/",
     tags: [TAGS.KOTLIN],
   },
   {
     title: "Creación de Empresa GearSoftCA",
     description:
-      "GearSoftCA destaca como proyecto por su enfoque en el desarrollo de soluciones tecnológicas a medida para empresas de Venezuela y Latinoamérica. Hemos implementado plataformas web y móviles modernas, integrando tecnologías como Next.js, React, Tailwind CSS y bases de datos en Firebase y SQL. Nuestro diferencial es la personalización, la calidad y la innovación, permitiendo a nuestros clientes digitalizar procesos, optimizar la gestión empresarial y potenciar su crecimiento. GearSoftCA es sinónimo de confianza, soporte y transformación digital real para negocios que buscan destacar en el mercado actual.",
+      "GearSoftCA es una empresa venezolana de desarrollo de soluciones tecnológicas a medida para empresas de Venezuela y Latinoamérica. Hemos implementado plataformas web y móviles modernas, integrando tecnologías como Next.js, React, Tailwind CSS y bases de datos en Firebase y SQL. Nuestro diferencial es la personalización, la calidad y la innovación, permitiendo a nuestros clientes digitalizar procesos, optimizar la gestión empresarial y potenciar su crecimiento.",
     link: "https://www.linkedin.com/company/gearsoftca",
-    image: "/projects/gearsoftcalinkedin.webp",
+    image: "/projects/Linkedin.png",
     github: "https://github.com/JavierAlburges/",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
@@ -100,7 +140,7 @@ const PROJECTS = [
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
-              alt="Imagen del Proyecto"
+              alt={`Captura de pantalla del proyecto ${title}`}
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
               loading="lazy"
               src={image}
@@ -113,7 +153,7 @@ const PROJECTS = [
             {title}
           </h3>
           <div class="flex flex-wrap mt-2">
-            <ul class="flex flex-row mb-2 gap-x-2">
+            <ul class="flex flex-row flex-wrap mb-2 gap-x-2 gap-y-2">
               {tags.map((tag) => (
                 <li>
                   <span
